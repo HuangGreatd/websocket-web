@@ -15,6 +15,7 @@ import ChatPage from "./pages/ChatPage.vue";
 import UpdatePasswordPage from "./pages/UpdatePasswordPage.vue";
 import EmptyLayout from "./layouts/EmptyLayout.vue";
 import { Icon} from 'vant';
+import * as echarts from 'echarts';
 
 
 const router = VueRouter.createRouter({
@@ -32,6 +33,8 @@ app.component("forget-layout", ForgetPasswordPage)
 app.component("after-layout", AfterSignUp)
 app.component("chat-layout", ChatPage)
 app.component("password-layout", UpdatePasswordPage)
+// 全局挂载 echarts
+app.config.globalProperties.$ECharts = echarts
 app.use(Vant)
 app.use(Icon);
 app.use(router)

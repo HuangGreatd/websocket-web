@@ -1,6 +1,9 @@
 <script setup>
 import {computed} from "vue";
 import {useRoute} from "vue-router";
+import * as echarts from "echarts";
+import { provide } from "vue";
+provide("echarts", echarts);
 
 let route = useRoute();
 const default_layout = "default"

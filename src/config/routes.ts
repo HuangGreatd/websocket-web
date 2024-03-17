@@ -28,6 +28,7 @@ import UserTagPage from "../pages/UserTagPage.vue";
 import SignUpPage from "../pages/SignUpPage.vue";
 import UserMatchPage from "../pages/UserMatchPage.vue";
 import UserBlogPage from "../pages/UserBlogPage.vue";
+import WatchHotTagePage from "../pages/WatchHotTagePage.vue";
 
 
 const routes = [
@@ -55,6 +56,7 @@ const routes = [
     {path: '/team/detail', title: "活动详情", component: TeamDetailPage},
     {path: '/team/update', title: "活动更新", component: TeamUpdatePage},
     {path: '/after', title: '标签', component: AfterSignUp, meta: {layout: 'after'}},
+    {path: '/watch/tag', title: '热门标签', component: WatchHotTagePage},
     {path: '/message', title: "信息中心", component: MessagePage},
     {path: '/chat', component: ChatPage, meta: {layout: 'chat'}},
     {path: '/fans', title: '我的粉丝', component: UserFansPage},

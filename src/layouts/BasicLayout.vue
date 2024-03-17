@@ -41,7 +41,6 @@ const active = ref(0)
 
 router.beforeEach(async (to) => {
   const toPath = to.path
-  console.log(toPath)
   const route = routes.find((routes) => {
     return routes.path === toPath
   })
